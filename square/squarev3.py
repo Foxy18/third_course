@@ -8,11 +8,11 @@ def input_point(line):
     
 
 if __name__ == "__main__":
-    squeres=[]
+    squares=[]
     A, B, C, D = map(input_point, input('Введите координаты точек через пробел в формате (x,y): ').split(' '))
-    squeres.append(square(A, B, C))
-    squeres.append(square(A, C, D))
+    squares.append(square(A, B, C))
+    squares.append(square(A, C, D))
     print(square(B, C, D))
-    squeres.append(square(A, B, D))
-    squeres.append(square(B, C, D))
-    print(max(squeres))
+    squares.append(square(A, B, D))
+    squares.append(square(B, C, D))
+    print(max(squares))
